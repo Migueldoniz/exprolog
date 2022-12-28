@@ -1,0 +1,17 @@
+docente :-
+    carrega('docente.bd'),
+    carrega('disciplina.bd'),
+    format('~n~n---Sistema de docentes---~n'),
+    pergunta1P(A),
+    pergunta2P(B),
+    pergunta3P(C),
+    pergunta4P(D),
+    respondeP(A, B, C, D),
+    salva(docente, 'docente.bd'),
+    salva(disciplina, 'disciplina.bd'),
+    !.
+
+:- dynamic docente/5.
+
+docente(matematica, 'F', s, 'DCCE', jessica).
+

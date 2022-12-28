@@ -1,0 +1,16 @@
+disciplina :-
+    carrega('disciplina.bd'),
+    carrega('docente.bd'),
+    format('~n~n---Sistema de disciplinas---~n'),
+    pergunta1D(A),
+    pergunta2D(B),
+    pergunta3D(C),
+    respondeD(A, B, C),
+    salva(disciplina, 'disciplina.bd'),
+    !.
+
+:- dynamic disciplina/3.
+
+disciplina(matematica, jessica, 'DCCE').
+disciplina(matematica, jessica, 'DCCE').
+

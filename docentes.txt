@@ -1,0 +1,4 @@
+:- dynamic docente/4.
+
+docente(_, _, _, 's.').
+
